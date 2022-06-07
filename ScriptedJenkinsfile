@@ -1,6 +1,6 @@
 node('linux'){
     stage('Checkout') {
-        git branch: 'main', credentialsId: 'f4832340-5da4-45a7-abd6-e57396fa3262', url: 'git@github.com:PanMonsters/test.git'
+        git branch: 'main', credentialsId: 'f4832340-5da4-45a7-abd6-e57396fa3262', url: 'git@github.com:PanMonsters/Scripted-Pipeline.git'
     }
     stage("Run playbook"){
         if ( "${prod_run}" == "true" ){
